@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/alt_favicon.svg" />
+    <script
+      src="https://kit.fontawesome.com/d37c5443c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>fisrt.modal</title>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="page-wrapper">
+      <main>
+        <div id="logo-container">
+          <img
+            id="logo-el"
+            src="./assets/alt_logo.svg"
+            alt="Logo First Modal"
+          />
+        </div>
+
+        <button id="openModal">
+          Abrir Janela
+          <img id="open-icon" src="./assets/open.svg" alt="Open Icon" />
+        </button>
+        <p class="line-1 anim-typewriter">
+          <span id="open">&lt;p&gt;</span> Meu primeiro prejeto utilizando
+          <span class="em">HTML</span>, <span class="em">CSS</span> e
+          <span class="em">JavaScript. </span><span id="close">&lt;/p&gt;</span>
+        </p>
+
+        <div class="techs">
+          <img src="./assets/html.svg" alt="HTML Logo" />
+          <img src="./assets/css.svg" alt="CSS Logo" />
+          <img src="./assets/javascript.svg" alt="JavaScript Logo" />
+        </div>
+      </main>
+      <footer>
+        <div id="icon-container">
+          <p>find.<span id="me">me</span></p>
+          <a
+            title="GitHub"
+            class="link-icon"
+            target="_blank"
+            href="https://github.com/oabarreto"
+            ><i class="fab fa-github-square"></i>
+          </a>
+          <a
+            title="Linkedin"
+            class="link-icon"
+            target="_blank"
+            href="https://www.linkedin.com/in/oabarreto/"
+            ><i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div id="info">
+          <img id="cp-icon" src="./assets/copyright.svg" alt="Copyright Logo" />
+          <span id="year-cp">2022;</span>Otávio Barreto. Alguns direitos
+          reservados
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal-wrapper invisible">
+      <div id="return-btn">
+        Pressione a tecla "
+        <div id="canvas-anim">
+          <img
+            class="anim-escape"
+            src="./assets/escape.svg"
+            alt="Escape button Logo"
+            id="escape"
+          />
+        </div>
+        " para fechar a janela.
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
+  </body>
+</html>
