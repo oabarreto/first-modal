@@ -17,4 +17,5 @@ Meu primeiro projeto utilizando HTML, CSS e JavaScript. Um modelo de modal simpl
 ## Demo: 
 
 
-![first-modal](https://user-images.githubusercontent.com/90889081/148143932-ff57261f-47a2-42ad-b722-8493eba6f62e.gif)
+![first-modal](https://user-images.githubusercontent.com/90889081/148254454-15c9aba0-b953-4b8a-9952-73e557f0777e.gif)
+
