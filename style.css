@@ -11,15 +11,6 @@ body {
   justify-content: center;
 }
 
-.bg {
-  height: 60vh;
-  width: 80vw;
-  border: 2.5px solid #777777;
-  border-radius: 15px;
-  align-self: flex-end;
-  margin-bottom: 8rem;
-}
-
 .page-wrapper {
   position: absolute;
   align-self: center;
@@ -211,12 +202,14 @@ footer {
 /* ===== Modal ===== */
 
 .modal-wrapper {
-  background: #777777ba;
+  background: #777777d0;
   height: 100vh;
   width: 100vw;
   position: absolute;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 3rem;
   align-items: center;
 }
 
@@ -250,4 +243,88 @@ footer {
 
 .invisible {
   display: none;
+}
+
+.close {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #e5e5e5;
+}
+
+.click {
+  background: #444;
+  padding: 1rem;
+  color: #e5e5e5;
+  border-radius: 10px;
+  border: 2px solid #e5e5e5;
+}
+
+@media screen and (max-width: 768px) {
+  #info {
+    font-size: 0.65rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .line-1 {
+    font-size: 0.75rem;
+  }
+
+  #return-btn {
+    display: none;
+  }
+
+  .or {
+    display: none;
+  }
+
+  footer {
+    width: 100vw;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 24.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .line-1 {
+    font-size: 0.625rem;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 20.25rem;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #logo-el {
+    transform: scale(0.8);
+  }
+
+  .line-1 {
+    font-size: 0.55rem;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 18rem;
+    }
+  }
 }
